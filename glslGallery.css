@@ -1,5 +1,9 @@
 @charset 'utf-8';
-
+.parentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .glslGallery {
     -moz-column-width: 15em;
     -webkit-column-width: 15em
