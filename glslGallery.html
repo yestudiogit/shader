@@ -2,11 +2,30 @@
 <html lang="en">
     <head>
         <link type="text/css" rel="stylesheet"
-            href="https://cdn.rawgit.com/patriciogonzalezvivo/glslGallery/gh-pages/build/glslGallery.css">
+            href="https://raw.githubusercontent.com/yestudiogit/shader/main/glslGallery.css">
         <script type="text/javascript"
-            src="https://cdn.rawgit.com/patriciogonzalezvivo/glslGallery/gh-pages/build/glslGallery.js"></script>
+            src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+        <script type="text/javascript"
+            src="https://raw.githubusercontent.com/yestudiogit/shader/main/glslGallery.js"></script>
+        <link type="text/css" rel="stylesheet"
+            href="https://rawgit.com/patriciogonzalezvivo/glslEditor/gh-pages/build/glslEditor.css">
+        <script type="application/javascript"
+            src="https://rawgit.com/patriciogonzalezvivo/glslEditor/gh-pages/build/glslEditor.js"></script>
     </head>
 
     <div class="glslGallery" data="160401213245"></div>
-
+    <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/yestudiogit/shader/main/shader001.frag" width="500"
+        height="500"></canvas>
+    <div id="glsl_editor"></div>
+    <script type="text/javascript">
+        const glslEditor = new GlslEditor('#glsl_editor', { 
+            canvas_size: 500,
+            canvas_draggable: true,
+            theme: 'monokai',
+            multipleBuffers: true,
+            watchHash: true,
+            fileDrops: true,
+            menu: true
+        });
+    </script>
 </html>
